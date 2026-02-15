@@ -6,7 +6,7 @@ async function bootstrap() {
 
   // Enable CORS for your specific frontend URL
   app.enableCors({
-    origin: 'https://react-nest-js-supabase-app.vercel.app', 
+    origin: ['https://mina-guestbook-frontend.vercel.app', 'http://localhost:3001'], 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
