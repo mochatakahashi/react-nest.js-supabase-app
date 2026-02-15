@@ -3,7 +3,15 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.enableCors(); // <--- THIS PERMITS THE FRONTEND TO CONNECT
-  await app.listen(3000);
+
+  // Enable CORS for your specific frontend URL
+  app.enableCors({
+    origin: 'https://react-nest-js-supabase-app.vercel.app', 
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  });
+
+  // For Vercel, we listen on the port provided by the environment or 3000
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
