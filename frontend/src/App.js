@@ -60,9 +60,9 @@ function App() {
             value={msgInput}
             onChange={e => setMsgInput(e.target.value)}
           />
-          <button type="submit" className="submit-btn">Send Message</button>
+          <button type="submit" className="submit-btn">Post Message</button>
         </form>
-      </div>
+      </div>s
 
       <div className="message-list">
         {messages.map((msg) => (
