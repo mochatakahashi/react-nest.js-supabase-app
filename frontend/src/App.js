@@ -62,7 +62,7 @@ function App() {
           />
           <button type="submit" className="submit-btn">Post Message</button>
         </form>
-      </div>s
+      </div>
 
       <div className="message-list">
         {messages.map((msg) => (
