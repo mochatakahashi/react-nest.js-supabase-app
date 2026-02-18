@@ -6,7 +6,11 @@ async function bootstrap() {
 
   // Enable CORS for your specific frontend URL
   app.enableCors({
-    origin: ['https://mina-guestbook-frontend.vercel.app', 'http://localhost:3001'], 
+    origin: [
+      'https://mina-guestbook-frontend.vercel.app',
+      'http://localhost:3001',
+      'https://my-personal-website-six-nu.vercel.app'
+    ], 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
