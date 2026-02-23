@@ -9,7 +9,9 @@ async function bootstrap() {
     origin: [
       'https://mina-guestbook-frontend.vercel.app',
       'http://localhost:3001',
-      'https://my-personal-website-six-nu.vercel.app'
+      'https://my-personal-website-six-nu.vercel.app',
+      'http://localhost:5500',
+      'http://localhost:3000'
     ], 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
